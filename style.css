@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 1500px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 5vh 6vw;
+}
+
+.brand {
+  color: #67e8f9;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.tagline, section > p {
+  color: #a8b3c7;
+}
+
+h1 {
+  font-size: clamp(32px, 4vw, 64px);
+  margin-top: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.routine {
+  min-height: 240px;
+  padding: 28px;
+  text-align: left;
+  color: white;
+  background: #19243a;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.routine span {
+  color: #67e8f9;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.routine h2 {
+  font-size: 28px;
+  margin-top: 38px;
+}
+
+.routine p {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 4px solid #67e8f9;
+  outline-offset: 5px;
+  border-color: #67e8f9;
+  transform: scale(1.02);
+}
+
+#timer {
+  color: #67e8f9;
+  font-size: clamp(64px, 12vw, 130px);
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.controls button, #again {
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  background: #67e8f9;
+  color: #0b1020;
+  font-weight: bold;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

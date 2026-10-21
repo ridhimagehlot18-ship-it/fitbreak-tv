@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitBreak TV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="brand">FITBREAK TV</p>
+      <p class="tagline">Your living room. Your reset.</p>
+    </header>
+
+    <section id="home">
+      <h1>Take a break. Feel better.</h1>
+      <p>Choose a short guided movement session.</p>
+
+      <div class="cards">
+        <button class="routine" data-minutes="3">
+          <span>01 / RESET</span>
+          <h2>Quick Stretch</h2>
+          <p>3 minutes</p>
+        </button>
+
+        <button class="routine" data-minutes="5">
+          <span>02 / MOVE</span>
+          <h2>Movement Break</h2>
+          <p>5 minutes</p>
+        </button>
+
+        <button class="routine" data-minutes="5">
+          <span>03 / TOGETHER</span>
+          <h2>Family Activity</h2>
+          <p>5 minutes</p>
+        </button>
+      </div>
+    </section>
+
+    <section id="session" hidden>
+      <p>YOUR SESSION</p>
+      <h1 id="sessionTitle">Quick Stretch</h1>
+      <p id="timer">03:00</p>
+      <p id="status">Ready when you are.</p>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="restart">Restart</button>
+        <button id="homeButton">Home</button>
+      </div>
+    </section>
+
+    <section id="complete" hidden>
+      <h1>Well done!</h1>
+      <p>You completed your movement break.</p>
+      <p>Sessions completed: <span id="count">0</span></p>
+      <button id="again">Choose another session</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
